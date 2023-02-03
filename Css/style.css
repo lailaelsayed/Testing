@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --main-font-1:'Poppins', sans-serif;
+    --main-font-2:'Montserrat', sans-serif;
+    --main-text:#343434;
+    --main-bg:#1C1C1C;
+}
+.main-text{
+    color:var(--main-text);
+}
+.main-bg{
+    background-color: var(--main-bg);
+}
+.main-font-1{
+    font-family: var(--main-font-1);
+}
+.main-font-2{
+    font-family:var(--main-font-2);
+}
+
+.clr{
+    clear:both;
+}
+
+/**********************header********************/
+#home{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) , url(..//img/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+   
+}
+#home .home-content>h4{
+    font-size: 50px;
+}
+#home .home-content>h1{
+    font-size: 60px;
+    font-weight: 200;
+}
+
+#home h1::after{
+    content: '|';
+    animation-name: typing;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    font-weight: 400;
+}
+@keyframes typing {
+    0%{
+        content: "L|";
+    }
+    2%{
+        content: "La|";
+    }
+    4%{
+        content: "Lar|";
+    }
+    6%{
+        content: "Larr|";
+    }
+    8%{
+        content: "Larry|";
+    }
+    10%{
+        content: "Larry D|";
+    }
+    12%{
+        content: "Larry Da|";
+    }
+    14%{
+        content: "Larry Dan|";
+    }
+    16%{
+        content: "Larry Dani|";
+    }
+    18%{
+        content: "Larry Danie|";
+    }
+    20%{
+        content: "Larry Daniel|";
+    }
+    22%{
+        content: "Larry Daniels|";
+    }
+    24%{
+        content: "Larry Daniel|";
+    }
+    26%{
+        content: "Larry Danie|";
+    }
+    28%{
+        content: "Larry Dani|";
+    }
+    30%{
+        content: "Larry Dan|";
+    }
+    32%{
+        content: "Larry Da|";
+    }
+    33%{
+        content: "Larry D|";
+    }
+    34%{
+        content: "Larry|";
+    }
+    36%{
+        content: "Larr|";
+    }
+    38%{
+        content: "La|";
+    }
+    40%{
+        content: "L|";
+    }
+    42%{
+        content: "|";
+    }
+    44%{
+        content: "D|";
+    }
+    46%{
+        content: "De|";
+    }
+    48%{
+        content: "Dev|";
+    }
+    50%{
+        content: "Deve|";
+    }
+    52%{
+        content: "Devel|";
+    }
+    54%{
+        content: "Develo|";
+    }
+    55%{
+        content: "Develop|";
+    }
+    56%{
+        content: "Develope|";
+    }
+    58%{
+        content: "Developer|";
+    }
+    60%{
+        content: "Develope|";
+    }
+    62%{
+        content: "Develop|";
+    }
+    63%{
+        content: "Develo|";
+    }
+    64%{
+        content: "Devel|";
+    }
+    66%{
+        content: "Deve|";
+    }
+    68%{
+        content: "Dev|";
+    }
+    70%{
+        content: "De|";
+    }
+    72%{
+        content: "D|";
+    }
+    74%{
+        content: "|";
+    }
+    76%{
+        content: "D|";
+    }
+    78%{
+        content: "De|";
+    }
+    80%{
+        content: "Des|";
+    }
+    82%{
+        content: "Desi|";
+    }
+    84%{
+        content: "Desig|";
+    }
+    86%{
+        content: "Design|";
+    }
+    88%{
+        content: "Designe|";
+    }
+    90%{
+        content: "Designer|";
+    }
+    91%{
+        content: "Designe|";
+    }
+    92%{
+        content: "Design|";
+    }
+    93%{
+        content: "Desig|";
+    }
+    94%{
+        content: "Desi|";
+    }
+    96%{
+        content: "Des|";
+    }
+    97%{
+        content: "De|";
+    }
+    98%{
+        content: "D|";
+    }
+    100%{
+        content: "|";
+    }
+
+}
+
+
+/**********************about************************/
+
+#about .about-img .img-dot{
+    background-image: url(..//img/dots.png);
+    width: 85%;
+    height: 85%;
+    bottom:-6%;
+    left:-6%;
+    z-index: -1;
+}
+
+.about-btn:hover {
+    background-color: white;
+    color:black;
+
+}
+
+
+/******************services*****************/
+#services ,#client ,#blog{
+    background-color: #f7f7f7;
+}
+ .services-title h3 , .works-title h3{
+    font-size: 40px;
+    z-index: 0; 
+}
+ .services-title h3::after, .works-title h3::after{
+    content: '';
+    position: absolute;
+    background-image: url(..//img/dots.png);
+    width: 100%;
+    height: 80%;
+    transform: translate(-100% , 50%);
+    z-index:-1;
+}
+
+
+#services .services-info:hover .services-icon {
+    background-color:var(--main-bg);
+}
+#services .services-info:hover .services-icon i{
+    color: #eeeeee;
+}
+#services .services-icon{
+    background-color: #eeeeee;
+    
+    transition: all 1s;
+}
+
+
+/*****************works*******************/
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: transparent;
+}
+
+.icon-work{
+    display: inline-block;
+    background-color: #1C1C1C;
+    border-radius: 50%;
+    color: white;
+}
+.icon-work :hover{
+    background-color: white;
+    color: #1C1C1C;
+    border-radius: 50%;
+}
+
+.work-img .layer-img {
+   top:10%;
+   left: 3%;
+   width: 94%;
+   height: 94%;
+   transition: all 0.5s;
+   transition-timing-function: ease-out;
+   opacity: 0;
+}
+.work-img:hover .layer-img {
+    top:3.5% !important;
+    opacity: 1;
+    
+}
+.work-img:hover .layer-info >h6  {
+    transform:none;
+}
+.work-img .layer-info >h6 {
+    transform: translateY(-50%);
+    transition: all 1s ;
+}
+
+/*************************client************************/
+.client-img{
+    width: 10%;
+}
+
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #343434;
+}
+
+/**************************Blog***********************/
+
+.blog-img img{
+    transition: all 0.5s;
+}
+
+.blog-img:hover img{
+    transform: scale(1.2,1.2);
+}
+
+
+/*********************contact*********************/
+#contact .contact-icon:hover {
+    background-color:var(--main-bg);
+}
+#contact .contact-icon:hover i{
+    color: #eeeeee;
+}
+#contact .contact-icon{
+    background-color: #eeeeee;
+    
+    transition: all 1s;
+}
+
+/***************footer**********************/
+footer >p{
+    color:#556465;
+}
+
+
+
+
+
+
+
